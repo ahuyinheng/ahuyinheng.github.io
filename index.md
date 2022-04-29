@@ -1,5 +1,6 @@
 ## 恭喜你发现了尹恒的网站！！！
 
+在这个网站，和大家一起学习最新的技术知识~~~
 You can use the [editor on GitHub](https://github.com/yh-1/yinheng.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
 Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
