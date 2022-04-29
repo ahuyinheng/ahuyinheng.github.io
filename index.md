@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## 恭喜你发现了尹恒的网站！！！
 
 You can use the [editor on GitHub](https://github.com/yh-1/yinheng.github.io/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
