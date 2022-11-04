@@ -1,6 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite-url/docker/one/</loc>
+    <lastmod>2022-11-04</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite-url/cloudserver/netdisk/</loc>
+    <lastmod>2022-11-03</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite-url/cloudserver/basicterm/</loc>
+    <lastmod>2022-11-03</lastmod>
+  </url>
+  <url>
     <loc>http://yoursite-url/LaTex/latex/vscode_latex/</loc>
     <lastmod>2022-11-01</lastmod>
   </url>
@@ -9,15 +21,11 @@
     <lastmod>2020-10-31</lastmod>
   </url>
   <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>
-  <url>
-    <loc>http://yoursite-url/yinheng/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2020-04-16</lastmod>
-  </url>
-  <url>
     <loc>http://yoursite-url/LaTex/Hexo-Theme-LiveMyLife/</loc>
+    <lastmod>2020-04-16</lastmod>
+  </url>
+  <url>
+    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
     <lastmod>2020-04-16</lastmod>
   </url>
 </urlset> 

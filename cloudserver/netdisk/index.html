@@ -139,10 +139,10 @@
   <!--[if lt IE 9]> <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script> <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script> <![endif]-->
 
   <!-- ga & ba script hoook -->
-  <link rel="canonical" href="http://yoursite-url/archives/2020/10/">
+  <link rel="canonical" href="http://yoursite-url/cloudserver/netdisk/">
   <title>
     
-      Yinheng | Tech
+      关于云网盘的搭建 - Yinheng | Tech
     
   </title>
 <meta name="generator" content="Hexo 5.4.2"></head>
@@ -300,29 +300,7 @@
           <!-- LangSelect -->
           
           
-          <!-- LangSelect start -->
-          <!-- LangSelect -->
-<li>
-  <a id="lang-select-label"><i class="fa fa-globe"></i>
-    <span>
-      简体中文
-    </span>
-    <select id="lang-select" data-canonical="archives/2020/10/index.html">
-      
-      
-      <option value="cn"  selected >
-        简体中文
-      </option>
-      
-      <option value="en" >
-        English
-      </option>
-      
-    </select>
-  </a>
-</li>
-
-          <!-- LangSelect end -->
+          
           
           
         </ul>
@@ -374,19 +352,19 @@
     .body--light {
       /* intro-header */
       --intro-header-background-image-url-home: url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: url('');
-      --intro-header-background-image-url-page: url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: url('//img/header_img/lml_bg.jpg');
     }
     .body--dark {
       --intro-header-background-image-url-home: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/newhome_bg.jpg');
-      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('');
-      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/archive_bg2.jpg');
+      --intro-header-background-image-url-post: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('/img/header_img/lml_bg.jpg');
+      --intro-header-background-image-url-page: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.2)), url('//img/header_img/lml_bg.jpg');
     }
 
     header.intro-header {
-       /*page*/
-        background-image: var(--intro-header-background-image-url-page);
-        /* background-image: url('/img/header_img/archive_bg2.jpg'); */
+       /*post*/
+        background-image: var(--intro-header-background-image-url-post);
+        /* background-image: url('/img/header_img/lml_bg.jpg'); */
       
     }
 
@@ -404,10 +382,42 @@
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
           
-          <div class="site-heading">
-            <h1>不同的路 | 不同风景</h1>
-            <!--<hr class="small">-->
-            <span class="subheading">我的人生尝试走过很多路，也因此看到了许多不一样的风光</span>
+          <div class="post-heading">
+            <div class="tags">
+              
+              <a class="tag" href="/tags/#Cloudserver" title="Cloudserver">Cloudserver</a>
+              
+            </div>
+            <h1>关于云网盘的搭建</h1>
+            <h2 class="subheading"></h2>
+            <span class="meta">
+              Posted by Heng Yin on
+              2022-11-03
+            </span>
+
+
+            
+            <!-- WordCount start -->
+            <div class="blank_box"></div>
+            <span class="meta">
+              Estimated Reading Time <span class="post-count">5</span> Minutes
+            </span>
+            <div class="blank_box"></div>
+            <span class="meta">
+              Words <span class="post-count">1.3k</span> In Total
+            </span>
+            <div class="blank_box"></div>
+            <!-- WordCount end -->
+            
+            
+            <!-- 不蒜子统计 start -->
+            <span class="meta" id="busuanzi_container_page_pv">
+              Viewed <span id="busuanzi_value_page_pv"><i class="fa fa-spinner fa-spin"></i></span> Times
+            </span>
+            <!-- 不蒜子统计 end -->
+            
+
+
           </div>
           
         </div>
@@ -448,321 +458,393 @@
 	Friends Blog、
 	anchorjs、
 	) -->
-		<!-- Main Content -->
-<div class="container">
-  <div class="row">
+		<!-- Modify by Yu-Hsuan Yen -->
+<!-- Post Content -->
+<article>
+  <div class="container">
+    <div class="row">
+      <!-- Post Container -->
+      <div class="col-lg-8 col-lg-offset-1 col-md-10 col-md-offset-1 post-container">
+
+        <h2 id="Cloudeve安装">Cloudeve安装</h2>
+<ol>
+<li>执行如下命令，下载cloudreve安装包。</li>
+</ol>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">wget</span> https://labfileapp.oss-cn-hangzhou.aliyuncs.com/cloudreve_3.<span class="number">3</span>.<span class="number">1</span>_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>下载完毕后，执行如下命令，解压cloudreve安装包。</li>
+</ol>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">tar</span> -zxvf cloudreve_3.<span class="number">3</span>.<span class="number">1</span>_linux_amd64.tar.gz</span><br></pre></td></tr></table></figure>
+<ol start="3">
+<li>执行如下命令，给cloudreve授予权限。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">chmod</span> +x ./cloudreve</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>执行如下命令，运行cloudreve</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./cloudreve</span><br></pre></td></tr></table></figure>
+<p>返回结果如下所示，您可以看到管理员账号和密码。<br>
+<img src="ex1.png" alt="pit1"></p>
+<ol start="5">
+<li>打开浏览器，访问http://&lt;公网地址&gt;:5212，依次输入管理员账号和密码，单击登录。<br>
+<img src="ex2.png" alt="pit2"></li>
+</ol>
+<h2 id="ossfs安装">ossfs安装</h2>
+<p>ossfs能让您在Linux系统中，将对象存储OSS的存储空间（Bucket）挂载到本地文件系统中，您能够像操作本地文件一样操作OSS的对象（Object），实现数据的共享。</p>
+<ol>
+<li>执行如下命令，下载ossfs安装包。</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https:<span class="regexp">//g</span>osspublic.alicdn.com<span class="regexp">/ossfs/</span>ossfs_1.<span class="number">80.6</span>_centos8.<span class="number">0</span>_x86_64.rpm</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>下载完毕后，执行如下命令，安装ossfs。</li>
+</ol>
+<p>2.1 先更换yum源（Centos8 yum 官方源下线）</p>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">#1.先删除系统内过期的.repo文件</span></span><br><span class="line">rm -f <span class="regexp">/etc/yum</span>.repos.d/*</span><br><span class="line"></span><br><span class="line"><span class="comment">#2.载新的 CentOS-Base.repo 到 /etc/yum.repos.d/</span></span><br><span class="line">wget -O <span class="regexp">/etc/yum</span>.repos.d<span class="regexp">/CentOS-Base.repo https:/</span><span class="regexp">/mirrors.aliyun.com/</span>repo/Centos-vault-<span class="number">8.5</span>.<span class="number">2111</span>.repo</span><br><span class="line"></span><br><span class="line"><span class="comment">#3.运行 yum makecache 生成缓存</span></span><br><span class="line">yum clean all &amp;&amp; yum makecache</span><br></pre></td></tr></table></figure>
+<p>2.2 安装ossfs</p>
+<figure class="highlight apache"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">yum</span> install -y ./ossfs_1.<span class="number">80</span>.<span class="number">6</span>_centos8.<span class="number">0</span>_x86_64.rpm</span><br></pre></td></tr></table></figure>
+<p>返回结果如下所示，表示ossfs安装成功。<br>
+<img src="ex3.png" alt="pit3"></p>
+<ol start="3">
+<li>执行如下命令，配置账号访问信息，将Bucket名称以及具有此Bucket访问权限的AccessKey ID和AccessKey Secret信息存放在/etc/passwd-ossfs文件中。您需要将BucketName、yourAccessKeyId和yourAccessKeySecret替换成Bucket名称、AccessKey ID和AccessKey Secret。<br>
+如下图所示<br>
+<img src="ex4.png" alt="pit4"></li>
+</ol>
+<figure class="highlight arcade"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">echo BucketName:yourAccessKeyId:yourAccessKeySecret &gt; <span class="regexp">/etc/</span>passwd-ossfs</span><br><span class="line">参数说明：</span><br><span class="line">BucketName：阿里云OSS控制台中创建的bucket名称，可在第一小节中的云产品资源下拉列表中查看。</span><br><span class="line">yourAccessKeyId：具有此Bucket访问权限的AccessKey ID，可在第一小节中的云产品资源下拉列表中的AK ID查看。</span><br><span class="line">yourAccessKeySecret：具有此Bucket访问权限的AccessKey Secret，可在第一小节中的云产品资源下拉列表中的AK Secret查看。</span><br><span class="line">也就是</span><br><span class="line">echo adc-oss-labs01970:LTAI5tRqDLVLsuaNNZyCBwBs:pMnCz8FYNJ4rqvaTAZq2f1RCFtyYcU &gt; <span class="regexp">/etc/</span>passwd-ossfs</span><br></pre></td></tr></table></figure>
+<ol start="4">
+<li>执行如下命令，给passwd-ossfs文件授予权限。</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod <span class="number">640</span> <span class="regexp">/etc/</span>passwd-ossfs</span><br></pre></td></tr></table></figure>
+<h2 id="挂载OSS">挂载OSS</h2>
+<ol>
+<li>在终端中，执行如下命令，创建一个名为oss文件夹。</li>
+</ol>
+<figure class="highlight arduino"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir oss</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>执行如下命令，将Bucket挂载到指定目录oss，您需要将BucketName、mountfolder和Endpoint替换成bucket名称、创建的oss文件夹和OSS的ECS 的经典网络访问（内网）的Endpoint。</li>
+</ol>
+<figure class="highlight routeros"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ossfs BucketName mountfolder -o <span class="attribute">url</span>=Endpoint</span><br></pre></td></tr></table></figure>
+<p>例如：ossfs adc-oss-labs01970 oss -o <a target="_blank" rel="noopener" href="http://url=oss-cn-shanghai-internal.aliyuncs.com">url=oss-cn-shanghai-internal.aliyuncs.com</a><br>
+参数说明：<br>
+BucketName：阿里云OSS控制台中创建的bucket名称，可在第一小节中的云产品资源下拉列表中查看。<br>
+mountfolder：上一步创建的挂载文件夹（本案例未 oss）。<br>
+Endpoint：OSS的ECS 的经典网络访问（内网）的Endpoint。</p>
+<ol start="3">
+<li>
+<p>查看是否挂载成功<br>
+<img src="ex5.png" alt="pit5"></p>
+</li>
+<li>
+<p>执行如下命令，在/etc/init.d/目录下建立文件ossfs，设置开机自动启动脚本进行OSS挂载。</p>
+</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vim <span class="regexp">/etc/i</span>nit.d/ossfs</span><br></pre></td></tr></table></figure>
+<p>进入Vim编辑器后，按下i键进入编辑模式，添加以下内容，添加完成后按下Esc键退出编辑模式，最后输入:wq后按下Enter键，保存并退出Vim编辑器。<br>
+注意：</p>
+<p>您需要将BucketName、mountfolder和Endpoint替换成bucket名称、创建的oss文件夹和OSS的ECS 的经典网络访问（内网）的Endpoint。</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">#! /bin/bash</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># ossfs      Automount Aliyun OSS Bucket in the specified direcotry.</span></span><br><span class="line"><span class="comment">#</span></span><br><span class="line"><span class="comment"># chkconfig: 2345 90 10</span></span><br><span class="line"><span class="comment"># description: Activates/Deactivates ossfs configured to start at boot time.</span></span><br><span class="line"></span><br><span class="line">ossfs BucketName mountfolder -o url=Endpoint -oallow_other</span><br></pre></td></tr></table></figure>
+<p>添加后的文件内容如下所示。<br>
+<img src="ex6.png" alt="pit6"></p>
+<ol start="5">
+<li>执行如下命令，为新建立的ossfs脚本赋予可执行权限。</li>
+</ol>
+<figure class="highlight awk"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod a+x <span class="regexp">/etc/i</span>nit.d/ossfs</span><br></pre></td></tr></table></figure>
+<ol start="6">
+<li>执行如下命令，把ossfs启动脚本作为其他服务，开机自动启动。</li>
+</ol>
+<figure class="highlight nginx"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="attribute">chkconfig</span> ossfs <span class="literal">on</span></span><br></pre></td></tr></table></figure>
+<h2 id="配置个人网盘">配置个人网盘</h2>
+<ol>
+<li>执行如下命令，运行cloudreve。</li>
+</ol>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./cloudreve</span><br></pre></td></tr></table></figure>
+<ol start="2">
+<li>
+<p>打开浏览器，访问<code>http://ECS公网地址:5212</code>，依次输入管理员账号和密码，单击登录。</p>
+</li>
+<li>
+<p>在cloudreve主界面右上角，单击管理面板。<br>
+<img src="ex7.png" alt="pit7"></p>
+</li>
+<li>
+<p>在确定站点URL设置对话框中，单击更改。<br>
+<img src="ex8.png" alt="pit8"></p>
+</li>
+<li>
+<p>在左侧导航栏中，单击存储策略,再点添加存储策略,选本机存储。<br>
+<img src="ex9.png" alt="pit9"><br>
+<img src="ex10.png" alt="pit10"><br>
+<img src="ex11.png" alt="pit11"></p>
+</li>
+<li>
+<p>在添加本机存储策略的上传路径页面中，将存储目录修改为oss/Object路径/{uid}/{path}，单击下一步。<br>
+Object路径<br>
+<img src="ex12.png" alt="pit12"><br>
+单击下一步<br>
+<img src="ex13.png" alt="pit13"><br>
+单击下一步<br>
+<img src="ex14.png#pic_left" alt="pit14"><br>
+<img src=ex14.png /></p>
+</li>
+<li>
+<p>在添加本机存储策略的完成页面中，输入存储策略名OSS，单击完成。</p>
+</li>
+<li>
+<p>在左侧导航栏中，单击用户组。</p>
+</li>
+<li>
+<p>在用户组页面中，单击管理员操作中的编辑图标。</p>
+</li>
+<li>
+<p>在编辑管理员页面的存储策略中，选择oss，然后单击保存。</p>
+</li>
+<li>
+<p>在用户组的右上角，单击返回主页。</p>
+</li>
+<li>
+<p>在个人网盘页面，拖拽任意文件到网页中，待文件上传完毕，关闭上传队列。</p>
+</li>
+<li>
+<p>打开虚拟桌面的FireFox ESR浏览器打开oss控制台，在左侧导航栏中，通过Bucket列表,点击对应的Bucket名称，然后单击文件管理。</p>
+</li>
+<li>
+<p>在文件管理页面，单击文件名为1的文件夹。</p>
+</li>
+<li>
+<p>在1文件夹中，您可以看到在个人网盘上传的文件。</p>
+</li>
+</ol>
+
+
+        <hr>
+        <!-- Pager -->
+        <ul class="pager">
+          
+          <li class="previous">
+            <a href="/docker/one/" data-toggle="tooltip" data-placement="top" title="初探docker">&larr; Previous Post</a>
+          </li>
+          
+          
+          <li class="next">
+            <a href="/cloudserver/basicterm/" data-toggle="tooltip" data-placement="top" title="介绍一些关于云服务器的术语">Next Post &rarr;</a>
+          </li>
+          
+        </ul>
+
+        
+        <!-- tip start -->
+        <!-- tip -->
+<!-- tip start -->
+<div class="tip">
+  <p>
+    
+      如果您喜欢此博客或发现它对您有用，则欢迎对此发表评论。 也欢迎您共享此博客，以便更多人可以参与。 如果博客中使用的图像侵犯了您的版权，请与作者联系以将其删除。 谢谢 ！
+    
+  </p>
+</div>
+<!-- tip end -->
+
+        <!-- tip end -->
+        
+
+        
+        <!-- Sharing Srtart -->
+        <!-- Social Social Share Post -->
+<!-- Docs:https://github.com/overtrue/share.js -->
+
+<div class="social-share" data-initialized="true" data-disabled="tencent ,douban ,qzone ,linkedin ,facebook ,google ,diandian" data-wechat-qrcode-helper="" align="center">
+  <ul class="list-inline text-center social-share-ul">
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-twitter">
+        <i class="fa fa-twitter fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a class="social-share-icon icon-wechat">
+        <i class="fa fa-weixin fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-weibo">
+        <i class="fa fa-weibo fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon icon-qq">
+        <i class="fa fa-qq fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+    <li class="social-share-li">
+      <a target="_blank" class="social-share-icon" href="mailto:?subject=关于云网盘的搭建&body=Hi,I found this website and thought you might like it http://yoursite-url/cloudserver/netdisk/">
+        <i class="fa fa-envelope fa-1x" aria-hidden="true"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+<!-- css & js -->
+<!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/css/share.min.css"> -->
+<script defer="defer" async="true" src="https://cdnjs.cloudflare.com/ajax/libs/social-share.js/1.0.16/js/social-share.min.js"></script>
+
+        <!-- Sharing End -->
+        
+        <hr>
+
+        <!-- comments start -->
+        <!-- 1. gitalk comment -->
+
+  <!-- gitalk start -->
+  <!-- Docs:https://github.com/gitalk/gitalk/blob/master/readme-cn.md -->
+
+  <div id="gitalk-container"></div>
+
+  
+    <!-- <script src="https://cdn.jsdelivr.net/npm/gitalk@1/dist/gitalk.js"></script> -->
+    <script src="/js/comment/gitalk.js"></script>
+  
+
+  <script>
+    var gitalk = new Gitalk({
+      clientID: '',
+      clientSecret: '',
+      repo: '',
+      owner: '',
+      admin: '',
+      id: 'Thu Nov 03 2022 23:27:32 GMT+0800', // Ensure uniqueness and length less than 50
+      distractionFreeMode: false, // Facebook-like distraction free mode
+      perPage: 10,
+      pagerDirection: 'last',
+      createIssueManually: false,
+      language: 'en',
+      proxy: 'https://cors-anywhere.azm.workers.dev/https://github.com/login/oauth/access_token'
+    });
+    gitalk.render('gitalk-container');
+
+    var gtFolded = () => {
+      setTimeout(function () {
+        let markdownBody = document.getElementsByClassName("markdown-body");
+        let list = Array.from(markdownBody);
+        list.forEach(item => {
+          if (item.clientHeight > 250) {
+            item.classList.add('gt-comment-body-folded');
+            item.style.maxHeight = '250px';
+            item.title = 'Click to Expand';
+            item.onclick = function () {
+              item.classList.remove('gt-comment-body-folded');
+              item.style.maxHeight = '';
+              item.title = '';
+              item.onclick = null;
+            };
+          }
+        })
+      }, 800);
+    }
+  </script>
+
+  <!-- gitalk end -->
+
+
+<!-- 2. gitment comment -->
+
+
+<!-- 3. disqus comment -->
+
+
+        <!-- comments end -->
+        <hr>
+
+      </div>
+
+      <!-- Catalog: Tabe of Content -->
+      <!-- Table of Contents -->
+
+    
+      <aside id="sidebar">
+        <div id="toc" class="toc-article">
+        <strong class="toc-title">目录</strong>
+        
+          <ol class="toc-nav"><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#Cloudeve%E5%AE%89%E8%A3%85"><span class="toc-nav-number">1.</span> <span class="toc-nav-text">Cloudeve安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#ossfs%E5%AE%89%E8%A3%85"><span class="toc-nav-number">2.</span> <span class="toc-nav-text">ossfs安装</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E6%8C%82%E8%BD%BDOSS"><span class="toc-nav-number">3.</span> <span class="toc-nav-text">挂载OSS</span></a></li><li class="toc-nav-item toc-nav-level-2"><a class="toc-nav-link" href="#%E9%85%8D%E7%BD%AE%E4%B8%AA%E4%BA%BA%E7%BD%91%E7%9B%98"><span class="toc-nav-number">4.</span> <span class="toc-nav-text">配置个人网盘</span></a></li></ol>
+        
+        </div>
+      </aside>
     
 
-    <!-- USE SIDEBAR -->
-    <!-- Post Container -->
-    <div class="
+
+
+      <!-- Sidebar Container -->
+      <div class="
                 col-lg-8 col-lg-offset-1
-                col-md-8 col-md-offset-1
-                col-sm-12
-                col-xs-12
-                post-container
-            ">
+                col-md-10 col-md-offset-1
+                sidebar-container">
 
-      <!-- Main Content -->
-<div class="container">
-  <div class="row">
-    <div class="col-lg-8 col-lg-offset-0 col-md-10 col-md-offset-1">
-      <!-- 归档列表 -->
-
-      
-
-      <!-- 归档列表 -->
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2022">
-          <span class="tag-text">2022</span>
-        </span>
-        <ul>
-          
-          <li>
-            11-04
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/docker/one/" style="color: #0085a1">
-              <span>
-                初探docker
-                
-                -- docker
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-03
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cloudserver/netdisk/" style="color: #0085a1">
-              <span>
-                关于云网盘的搭建
-                
-                -- cloudserver
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-03
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/cloudserver/basicterm/" style="color: #0085a1">
-              <span>
-                介绍一些关于云服务器的术语
-                
-                -- cloudserver
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            11-01
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/LaTex/latex/vscode_latex/" style="color: #0085a1">
-              <span>
-                使用vscode写latex的教程
-                
-                -- LaTex
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-      <div class="one-tag-list">
-        <span class="fa fa-calendar-times-o listing-seperator" id="2020">
-          <span class="tag-text">2020</span>
-        </span>
-        <ul>
-          
-          <li>
-            10-31
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/LaTex/latex/latex_install/" style="color: #0085a1">
-              <span>
-                Latex安装教程
-                
-                -- LaTex
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/en/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-                
-              </span>
-            </a>
-          </li>
-          
-          <li>
-            04-17
-            <i class="fa fa-angle-double-right" aria-hidden="true"></i>
-            <a href="/LaTex/Hexo-Theme-LiveMyLife/" style="color: #0085a1">
-              <span>
-                Hexo-Theme-LiveMyLife
-                
-                -- LaTex
-                
-              </span>
-            </a>
-          </li>
-          
-        </ul>
-      </div>
-      
-    </div>
-  </div>
-</div>
-
-
-      <!-- 如果开启评论功能 -->
-      
-    </div>
-
-    <!-- Sidebar Container -->
-<div class="
-    col-lg-3 col-lg-offset-0
-    col-md-3 col-md-offset-0
-    col-sm-12
-    col-xs-12
-    sidebar-container
-">
-    
-        <!-- Short About -->
-<section class="visible-md visible-lg">
-  <h5><a href="/about/">关于自己</a></h5>
-  <div class="short-about">
-
-    
-    <img id="avatar_pic" src="/img/avatar/fatpeople.jpg" alt="avatar_pic" style="box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -moz-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);
-    -webkit-box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, .5);" />
-    
-
-    
-    <p>Fat people have no future, either thin or die...</p>
-    
-
-    <!-- SNS Link -->
-    <ul class="list-inline">
-      
-
-      
-      <li>
-        <a target="_blank" href="https://github.com/ahuyinheng">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-github fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-
-      
-      <li>
-        <a target="_blank" href="http://weibo.com/恒仔向前走">
-          <span class="fa-stack fa-lg">
-            <i class="fa fa-circle fa-stack-2x"></i>
-            <i class="fa fa-weibo fa-stack-1x fa-inverse"></i>
-          </span>
-        </a>
-      </li>
-      
-
-    </ul>
-  </div>
-</section>
-
-        <hr>
-    
         <!-- Featured Tags -->
+        
+        <section>
+          <!-- no hr -->
+          <h5>
+            <a href="/tags/">特色标签</a>
+          </h5>
+          <div class="tags">
+            
+            <a class="tag" href="/tags/#Cloudserver" title="Cloudserver">Cloudserver</a>
+            
+          </div>
+        </section>
+        
 
-<section>
-  <h5><a href="/tags/">特色标签</a></h5>
-  <div class="tags">
-    
-    
-    <a href="/tags/#Hexo-Theme-LiveMyLife" title="Hexo-Theme-LiveMyLife" rel="1">Hexo-Theme-LiveMyLife</a>
-    
-    
-    
-    <a href="/tags/#Cloudserver" title="Cloudserver" rel="2">Cloudserver</a>
-    
-    
-    
-    <a href="/tags/#Docker" title="Docker" rel="1">Docker</a>
-    
-    
-    
-    <a href="/tags/#LiveMyLife" title="LiveMyLife" rel="1">LiveMyLife</a>
-    
-    
-    
-    <a href="/tags/#Latex" title="Latex" rel="2">Latex</a>
-    
-    
+        <!-- Friends Blog -->
+        
+      </div>
+    </div>
   </div>
-</section>
+</article>
 
 
-        <hr>
-    
-        <!-- RECENT POSTS -->
 
-<h5><a href="/">最近博文</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="../../../docker/one/">
-      <li>初探docker</li>
-    </a>
-    
-    <a href="../../../cloudserver/netdisk/">
-      <li>关于云网盘的搭建</li>
-    </a>
-    
-    <a href="../../../cloudserver/basicterm/">
-      <li>介绍一些关于云服务器的术语</li>
-    </a>
-    
-    <a href="../../../LaTex/latex/vscode_latex/">
-      <li>使用vscode写latex的教程</li>
-    </a>
-    
-    <a href="../../../LaTex/latex/latex_install/">
-      <li>Latex安装教程</li>
-    </a>
-    
-  </ul>
-</div>
+<!-- anchorjs start -->
+<!-- async load function -->
+<!-- anchor-js, Doc:http://bryanbraun.github.io/anchorjs/ -->
+<script type="text/javascript">
+  // async load function
+  function async (u, c) {
+    var d = document,
+      t = 'script',
+      o = d.createElement(t),
+      s = d.getElementsByTagName(t)[0];
+    o.src = u;
+    if (c) {
+      o.addEventListener('load', function(e) {
+        c(null, e);
+      }, false);
+    }
+    s.parentNode.insertBefore(o, s);
+  };
+</script>
+<script type="text/javascript">
+  //anchor-js, Doc:http://bryanbraun.github.io/anchorjs/
+  async ("https://cdn.bootcss.com/anchor-js/1.1.1/anchor.min.js", function() {
+    anchors.options = {
+      visible: 'hover',
+      placement: 'left',
+      // icon: 'ℬ'
+      icon: '❡'
+    };
+    anchors.add().remove('.intro-header h1').remove('.subheading').remove('.sidebar-container h5');
+  });
+</script>
+<style>
+  /* place left on bigger screen */
+  @media all and (min-width: 800px) {
+    .anchorjs-link {
+      position: absolute;
+      left: -0.75em;
+      font-size: 1.1em;
+      margin-top: -0.1em;
+    }
+  }
+</style>
 
+<!-- anchorjs end -->
 
-        <hr>
-    
-        <!-- Archives -->
-
-<h5><a href="/archives/">archives</a></h5>
-<div class="widget">
-  <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="../../2022/11/">November 2022</a><span class="archive-list-count">4</span></li><li class="archive-list-item"><a class="archive-list-link" href="">October 2020</a><span class="archive-list-count">1</span></li><li class="archive-list-item"><a class="archive-list-link" href="../04/">April 2020</a><span class="archive-list-count">2</span></li></ul>
-</div>
-
-
-        <hr>
-    
-        <!-- Categories -->
-
-<h5><a href="/categories/">categories</a></h5>
-<div class="widget">
-  <ul>
-    
-    <a href="/categories/#Hexo-Theme-LiveMyLife">
-      <li>Hexo-Theme-LiveMyLife</li>
-    </a>
-    
-    <a href="/categories/#Cloudserver">
-      <li>Cloudserver</li>
-    </a>
-    
-    <a href="/categories/#Docker">
-      <li>Docker</li>
-    </a>
-    
-    <a href="/categories/#Latex安装">
-      <li>Latex安装</li>
-    </a>
-    
-  </ul>
-</div>
-
-
-        <hr>
-    
-</div>
-
-
-    
-  </div>
-</div>
 
 
 		<!-- Footer (contains ThemeColor、viewer) -->

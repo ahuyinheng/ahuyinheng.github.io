@@ -2,6 +2,27 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite-url/docker/one/</loc>
+    
+    <lastmod>2022-11-04</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/cloudserver/netdisk/</loc>
+    
+    <lastmod>2022-11-03</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/cloudserver/basicterm/</loc>
+    
+    <lastmod>2022-11-03</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite-url/LaTex/latex/vscode_latex/</loc>
     
     <lastmod>2022-11-01</lastmod>
@@ -44,21 +65,14 @@
   </url>
   
   <url>
-    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite-url/yinheng/Hexo-Theme-LiveMyLife/</loc>
-    
-    <lastmod>2020-04-16</lastmod>
-    
-  </url>
-  
-  <url>
     <loc>http://yoursite-url/LaTex/Hexo-Theme-LiveMyLife/</loc>
+    
+    <lastmod>2020-04-16</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/en/Hexo-Theme-LiveMyLife/</loc>
     
     <lastmod>2020-04-16</lastmod>
     
@@ -74,7 +88,7 @@
 
   <url>
     <loc>http://yoursite-url/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -82,21 +96,35 @@
   
   <url>
     <loc>http://yoursite-url/tags/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/Cloudserver/</loc>
+    <lastmod>2022-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/tags/Docker/</loc>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/tags/LiveMyLife/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/tags/Latex/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
@@ -105,14 +133,28 @@
   
   <url>
     <loc>http://yoursite-url/categories/Hexo-Theme-LiveMyLife/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/categories/Cloudserver/</loc>
+    <lastmod>2022-11-04</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>http://yoursite-url/categories/Docker/</loc>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
     <loc>http://yoursite-url/categories/Latex%E5%AE%89%E8%A3%85/</loc>
-    <lastmod>2022-11-01</lastmod>
+    <lastmod>2022-11-04</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.6</priority>
   </url>
